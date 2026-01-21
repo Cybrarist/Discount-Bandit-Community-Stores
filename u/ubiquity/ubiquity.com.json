@@ -1,0 +1,35 @@
+{
+  "name": "Ubiquity",
+  "domain": "store.ui.com",
+  "image" : "ubiquity.png",
+  "slug": "store_ui_com",
+  "crawling_method":"chromium",
+  "timeout":5000,
+  "page_event":"networkIdle",
+
+  "schema" : {
+    "name_schema_key":"product_group.name",
+    "image_schema_key":"product_group.image.url",
+    "total_reviews_schema_key":null,
+    "rating_schema_key":null,
+    "price_schema_key":"product_group.hasVariant.*.[sku=variant].offers.priceSpecification.price",
+    "used_price_schema_key":null,
+    "shipping_schema_key":null,
+    "stock_schema_key":null,
+    "condition_schema_key":null,
+    "seller_schema_key":null
+  },
+
+  "css" : {
+    "name_selectors":"title,[property='og:description'],[property='og:title'],h1:first-of-type",
+    "image_selectors":"meta[property='og:image']",
+    "total_reviews_selectors":null,
+    "rating_selectors":null,
+    "price_selectors":null,
+    "used_price_selectors":null,
+    "shipping_selectors":null,
+    "stock_selectors":null,
+    "condition_selectors":null,
+    "seller_selectors":null
+  }
+}
