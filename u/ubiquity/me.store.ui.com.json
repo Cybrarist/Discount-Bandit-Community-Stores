@@ -1,0 +1,33 @@
+{
+    "name": "Ubiquity ME",
+    "domain": "me.store.ui.com",
+    "slug": "me_store_ui_com",
+    "crawling_method": "chromium",
+    "timeout": 5000,
+    "page_event": "networkIdle",
+    "currency": "AED",
+    "schema": {
+        "name_schema_key": "name",
+        "image_schema_key": "image.url",
+        "total_reviews_schema_key": null,
+        "rating_schema_key": null,
+        "price_schema_key": "offers.priceSpecification.price",
+        "used_price_schema_key": null,
+        "shipping_schema_key": null,
+        "stock_schema_key": "offers.availability",
+        "condition_schema_key": null,
+        "seller_schema_key": "brand.name"
+    },
+    "css": {
+        "name_selectors": "title,[property=\"og:description\"],[property=\"og:title\"],h1:first-of-type",
+        "image_selectors": "meta[property='og:image']",
+        "total_reviews_selectors": null,
+        "rating_selectors": null,
+        "price_selectors": null,
+        "used_price_selectors": null,
+        "shipping_selectors": null,
+        "stock_selectors": null,
+        "condition_selectors": null,
+        "seller_selectors": null
+    }
+}
