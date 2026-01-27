@@ -6,7 +6,7 @@
   "crawling_method":"chromium",
   "timeout":5000,
   "page_event":"networkIdle",
-
+  "currency": "USD",
   "schema" : {
     "name_schema_key":"product_group.name",
     "image_schema_key":"product_group.image.url",
