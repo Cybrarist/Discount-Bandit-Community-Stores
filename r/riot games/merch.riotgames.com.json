@@ -20,14 +20,14 @@
   },
   "css": {
     "name_selectors": "title,h1:first-of-type",
-    "image_selectors": null,
+    "image_selectors": "img[class^='product-hero-image_product-image__image']",
     "total_reviews_selectors": null,
     "rating_selectors": null,
-    "price_selectors": null,
+    "price_selectors": "span[class*='product-details_variant-price']",
     "used_price_selectors": null,
     "shipping_selectors": null,
     "stock_selectors": "div[class*=\"product-hero__column--product-details\"] div[class*=\"tag-list\"] span:first-of-type",
-    "in_or_out_of_stock_selector_type": true,
+    "in_or_out_of_stock_selector_type": false,
     "stock_value_to_search": "[Change This To 'Not available' in your language]",
     "condition_selectors": null,
     "seller_selectors": null
