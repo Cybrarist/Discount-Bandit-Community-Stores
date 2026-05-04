@@ -1,0 +1,35 @@
+{
+    "name": "noble knight",
+    "domain": "nobleknight.com",
+    "slug": "nobleknight_com",
+    "crawling_method": "chromium",
+    "timeout": 5000,
+    "page_event": "networkIdle",
+    "currency": "USD",
+    "schema": {
+        "name_schema_key": "name",
+        "image_schema_key": "image.0",
+        "total_reviews_schema_key": null,
+        "rating_schema_key": null,
+        "price_schema_key": "offers.price",
+        "used_price_schema_key": null,
+        "shipping_schema_key": null,
+        "stock_schema_key": "offers.availability",
+        "condition_schema_key": "offers.itemCondition",
+        "seller_schema_key": null
+    },
+    "css": {
+        "name_selectors": "title,[property=\"og:description\"],[property=\"og:title\"],h1:first-of-type",
+        "image_selectors": "meta[property='og:image']",
+        "total_reviews_selectors": null,
+        "rating_selectors": null,
+        "price_selectors": null,
+        "used_price_selectors": null,
+        "shipping_selectors": null,
+        "stock_selectors": null,
+        "in_or_out_of_stock_selector_type": true,
+        "stock_value_to_search": true,
+        "condition_selectors": null,
+        "seller_selectors": null
+    }
+}
